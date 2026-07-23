@@ -13,5 +13,6 @@ main :: proc() {
 
   cat := structs()
   fmt.printf("Name:%v, age:%v\n", cat.name, cat.age)
+  pointers(&cat)
 }
 
