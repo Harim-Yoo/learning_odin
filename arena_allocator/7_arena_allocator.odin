@@ -4,6 +4,7 @@ import "core:fmt"
 import "core:os"
 import vmem "core:mem/virtual"
 
+
 load_files :: proc() -> (string, vmem.Arena) {
   arena : vmem.Arena // initialize the arena
   arena_err := vmem.arena_init_growing(&arena) // why such code?
@@ -14,6 +15,7 @@ load_files :: proc() -> (string, vmem.Arena) {
   assert(data_err == nil)
   return string(data), arena
 }
+
 
 main :: proc() {
   
