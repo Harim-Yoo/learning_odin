@@ -2,7 +2,6 @@ package parser
 
 import "core:fmt"
 import "core:os"
-import "core:bytes"
 
 main :: proc() {
   defer free_all(context.temp_allocator)
